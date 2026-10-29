@@ -9,6 +9,8 @@
 
 pub mod item;
 
+use crate::item::Item;
+
 /// Shows the item in slot A1 as `name $price`.
 ///
 /// ```
@@ -28,5 +30,5 @@ pub fn show_item() -> String {
 /// assert_eq!(dw17::slot_label(&item), "[B4]");
 /// ```
 pub fn slot_label(item: &item::Item) -> String {
-    format!("[{}]", item.code)
+    format!("[{}]", item.code())
 }

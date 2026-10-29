@@ -40,7 +40,7 @@ impl Item {
     /// assert_eq!(item.price_dollars(), 1.25);
     /// ```
     pub fn price_dollars(&self) -> f64 {
-        let cents = self.price_cents as f64
+        let cents = self.price_cents as f64;
         cents / 100.0
     }
 }
